@@ -1,0 +1,17 @@
+{
+  "name": "mary-poppins-test",
+  "version": "0.0.1",
+  "description": "testing mary poppins :D",
+  "main": "config.js",
+  "dependencies": {
+    "poppins-check-commit": "^0.2.0",
+    "poppins-pr-checklist": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true
+}
