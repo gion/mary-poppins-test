@@ -37,15 +37,38 @@ module.exports = function (poppins) {
   ];
   poppins.plugins.prChecklist.closing = 'Farewell';
 
+
   poppins.couldYouPlease('poppins-check-commit');
 
   poppins.plugins.checkCommit.check = function(data) {
-    console.log('~~~~~~~~~~~~~~~~');
-    console.log('checking commit...');
+    console.log('~~~~~~~~~checking commit~~~~~~~');
     console.log(data);
-    console.log('~~~~~~~~~~~~~~~~');
+    console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
     return false;
-  }
+  };
+
+
+  poppins.couldYouPlease('poppins-label');
+
+
+  poppins.plugins.labels = {
+
+    // tag even numbered issues
+    'even': function (issue) {
+      return issue.number % 2 === 0;
+    },
+    'random': function(issue) {
+      console.log('random label', issue);
+      return Math.random() > .5;
+    }
+  };
+
+
+  poppins.on('issueOpened', function(data) {
+    console.log('-----------issueOpened---------');
+    console.log(data);
+    console.log('-------------------------------');
+  });
 
   // load plugins from the cwd
   // poppins.theUsualPlease();

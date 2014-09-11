@@ -5,6 +5,7 @@
   "main": "config.js",
   "dependencies": {
     "poppins-check-commit": "^0.2.0",
+    "poppins-label": "0.0.3",
     "poppins-pr-checklist": "^0.2.2"
   },
   "devDependencies": {},
