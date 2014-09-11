@@ -37,6 +37,16 @@ module.exports = function (poppins) {
   ];
   poppins.plugins.prChecklist.closing = 'Farewell';
 
+  poppins.couldYouPlease('poppins-check-commit');
+
+  poppins.plugins.checkCommit.check = function(data) {
+    console.log('~~~~~~~~~~~~~~~~');
+    console.log('checking commit...');
+    console.log(data);
+    console.log('~~~~~~~~~~~~~~~~');
+    return false;
+  }
+
   // load plugins from the cwd
   // poppins.theUsualPlease();
 };
