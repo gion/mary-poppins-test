@@ -26,6 +26,17 @@ module.exports = function (poppins) {
 
   poppins.couldYouPlease('poppins-pr-checklist');
 
+  poppins.plugins.prChecklist.greeting = 'Hello';
+  poppins.plugins.prChecklist.checks = [
+    { 
+      message: 'Foo', 
+      condition: function (data) { 
+        return false; 
+      }
+    }
+  ];
+  poppins.plugins.prChecklist.closing = 'Farewell';
+
   // load plugins from the cwd
   // poppins.theUsualPlease();
 };
