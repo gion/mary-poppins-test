@@ -24,8 +24,8 @@ module.exports = function (poppins) {
   };
 
 
-  // poppins.couldYouPlease('poppins-pr-checklist');
+  poppins.couldYouPlease('poppins-pr-checklist');
 
   // load plugins from the cwd
-  poppins.theUsualPlease();
+  // poppins.theUsualPlease();
 };
