@@ -18,7 +18,7 @@ module.exports = function (poppins) {
     //   port: 80
     // }
     hook: {
-      url: 'http://bogdang.xivic.lan:9009',
+      url: 'http://192.168.0.10:9009',
       port: 9009
     }
   };
